@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ericli1988/fenix-interview#readme",
   "dependencies": {
     "angular": "^1.6.8",
+    "body-parser": "^1.18.2",
     "express": "^4.16.2"
   }
 }
