@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ericli1988/fenix-interview#readme",
   "dependencies": {
+    "angular": "^1.6.8",
     "express": "^4.16.2"
   }
 }
