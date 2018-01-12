@@ -1,17 +1,26 @@
-const express = require('express')
-const app = express()
+var express = require('express');
+var fs = require('fs');
+var app = express();
 
-//app.get('/', (req, res) => res.send('Hello World!'))
 
-//start angular application
-app.get('/', function(req, res) {
-	res.sendfile('index.html'); // load the single view file (angular will handle the page changes on the front-end)
+
+app.get('/', function(req, res){
+    console.log('GET /')
+    var html = '<html><body><form method="post" action="http://localhost:3001">Name: <input type="text" name="name" /><input type="submit" value="Submit" /></form></body>';
+    //var html = fs.readFileSync('index.html');
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end(html);
 });
 
-app.get('/core.js', function(req, res) {
-	res.sendfile('core.js'); 
+app.post('/', function(req, res){
+    console.log('The payment is successful with these details:');
+    console.dir(req.body);
+    res.writeHead(200, {'Content-Type': 'text/html'});
+	
+	//log the file
+    res.end('thanks');
 });
 
-
-
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+port = 3001;
+app.listen(port);
+console.log('Listening at http://localhost:' + port)
