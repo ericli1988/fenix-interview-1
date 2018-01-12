@@ -1,0 +1,22 @@
+{
+  "name": "fenix-interview",
+  "version": "1.0.0",
+  "description": "\"# fenix-interview\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericli1988/fenix-interview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericli1988/fenix-interview/issues"
+  },
+  "homepage": "https://github.com/ericli1988/fenix-interview#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
